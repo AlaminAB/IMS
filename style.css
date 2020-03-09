@@ -1,0 +1,373 @@
+/* Base CSS */
+body {
+    line-height: 1.3;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    opacity: 0.6;
+}
+
+.overlay.white {
+    background-color: #fff;
+}
+
+
+/* Header Style */
+.logo {
+    display: block;
+    color: inherit;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.logo:hover {
+    color: #018BDB;
+}
+
+.header-wrap {
+    background: #1A2A4B;
+    color: #fff;
+    height: 16vh;
+}
+
+.header-wrap > div, .header-wrap > div .row {
+    height: 100%;
+}
+
+.logo span {
+    display: block;
+    font-size: 350%;
+    font-weight: 600;
+}
+
+.main-menu li {
+    display: inline-block;
+}
+
+.main-menu a {
+    display: block;
+    background-color: #fff;
+    color: #1A2A4B;
+    padding: 8px 35px;
+    border-radius: 30px;
+    font-size: 19px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 0 20px;
+    line-height: 1;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.main-menu a:hover {
+    background-color: #018BDB;
+    color: #fff;
+}
+.slicknav_menu {
+    background: #1a2a4b;
+}
+.slicknav_nav li, .slicknav_nav ul {
+    display: block;
+    background: #fff;
+    border-radius: 20px;
+}
+.slicknav_nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 19px;
+}
+.main-menu {
+    text-align: center;
+    margin: 24px 0;
+}
+
+.header-right {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.header-right h5 {
+    font-size: 16px;
+    margin-bottom: 33px;
+}
+
+.header-right p {
+    margin: 0;
+}
+
+
+/* Banner Style */
+.main-content-wrap {
+    min-height: 74vh;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 7px solid #008cdb;
+    border-bottom: 7px solid #1b2a4b;
+    position: relative;
+}
+
+.main-content-inner {
+    padding: 30px 0;
+}
+
+.products-menu {
+    background-color: #fff;
+}
+
+.products-menu li {
+    display: block;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+.products-menu li a {
+    display: block;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    color: inherit;
+}
+
+.products-menu li:first-child {
+    border-top: none;
+}
+
+.products-list li {
+    display: inline-block;
+    width: 31.5%;
+    margin: 5px;
+    background-color: #1A2A4B;
+    overflow: hidden;
+}
+
+.products-list li img {
+    width: 100%;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.products-menu li .selected, .products-menu li:hover a {
+    background-color: #1A2A4B;
+    border-color: #1A2A4B;
+    color: #fff;
+}
+
+.products-list li:hover img {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+.single-product-list {
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    display: block;
+    min-height: 140px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-shadow: 0px 0.05px 0.05px rgba(0,0,0,0.5);
+}
+
+.single-product-list h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.single-product-list:hover {
+    color: #fff;
+}
+.product-details > h1 {
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.single-product-list .product-thumb {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    opacity: 0.10;
+}
+.product-thumb img {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.single-product-list.bg-primary {
+    background-color: #007bff!important;
+    opacity: 0.8;
+}
+
+/* Footer Style */
+.footer-wrap {
+    background: #008cdb;
+    color: #fff;
+    height: 10vh;
+}
+
+.footer-wrap > div, .footer-wrap > div .row {
+    height: 100%;
+}
+
+.copyright p {
+    font-size: 70%;
+    margin: 0;
+}
+
+.copyright p+p {
+    margin-top: 10px;
+}
+
+.social a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    margin: 10px;
+}
+
+.social a:hover {
+    opacity: 0.8;
+}
+
+.footer-wrap h3 {
+    font-size: 20px;
+    color: #1b2a4b;
+    margin: 0;
+}
+
+.footer-wrap a {
+    color: inherit;
+}
+
+
+
+/* Responsive CSS */
+@media (max-width: 767px) {
+    .products-menu {
+        margin-bottom: 30px;
+    }
+
+    .products-list li {
+        width: 47.5%;
+    }
+
+    .product-details .col-md-6+.col-md-6 {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-wrap, .banner-wrap, .footer-wrap {
+        height: auto;
+    }
+
+    .header-right h5 {
+        margin-bottom: 1em;
+    }
+
+    .main-menu {
+        max-width: 500px;
+        margin: 1.5em auto;
+    }
+
+    .main-menu li {
+        display: block;
+    }
+    
+    .main-menu a {
+        margin: 0 0 10px;
+    }
+    
+    .main-menu li:last-child a {
+        border-bottom: none;
+    }
+
+    .footer-wrap h3 {
+        margin-bottom: 0;
+    }
+
+    .footer-wrap .row > div+div {
+        margin-top: 1em;
+    }
+    
+    .footer-wrap, .header-wrap {
+        padding: 1em 0;
+    }
+    
+    .footer-wrap .row > div.text-right {
+        text-align: center!important;
+    }
+    .products-list li {
+        width: 46%;
+    }
+    .product-details > h1 {
+        font-size: 200%;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1500px) {
+    .main-menu a {
+        margin: 0 5px;
+        padding: 7px 15px;
+        font-size: 16px;
+    }
+}
