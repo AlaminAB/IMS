@@ -371,3 +371,16 @@ ul {
         font-size: 16px;
     }
 }
+
+
+/* update css file  */
+.line-floats-list {
+    padding-left: 50px;
+}
+
+.line-floats-list p {
+    margin-bottom: 5px;
+}
+tbody tr td:nth-child(2), td:nth-child(3), td:nth-child(4) {
+    background: #82828296;
+}
