@@ -116,6 +116,25 @@ ul {
     margin: 24px 0;
 }
 .header-right h6 {
+    font-size: 20px;
+}
+.header-right {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.header-right h5 {
+    font-size: 16px;
+    margin-bottom: 33px;
+}
+
+.header-right p {
+    margin: 0;
+    font-size: 16px;
+}
+@media (min-width: 1600px) {
+    .header-right h6 {
     font-size: 25px;
 }
 .header-right {
@@ -133,7 +152,7 @@ ul {
     margin: 0;
     font-size: 18px;
 }
-
+}
 
 /* Banner Style */
 .main-content-wrap {
